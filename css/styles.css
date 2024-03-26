@@ -8,6 +8,7 @@
   padding-left: 16px;
 }
 .container .container-content {
+  display: flex;
 }
 .contact-us {
   display: flex;
@@ -84,8 +85,10 @@
   border-color: #3350e9;
 }
 .form-item {
+  display: flex;
 }
 .message-label {
+  display: flex;
 }
 .overlay-container .container {
   border-radius: 50px;
