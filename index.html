@@ -15,93 +15,96 @@
   </head>
   <body>
     <header></header>
-    <section class="contact-us">
-      <div class="container-content">
+    <section id="contact-us">
+      <div class="contact-us-content">
         <h2 class="contact-us-title">Contact Us</h2>
-        <p class="contact-us-text">
-          Please use the form below to contact us. Enter your name, email,
-          phone, and message and we'll get back to you shortly.
-        </p>
-        <form class="form">
-          <div class="form-item">
-            <label class="form-label">
-              <input
-                class="form-input"
-                name="username"
-                placeholder="Name"
-                required
-                pattern="[A-Za-z0-9]{3,20}"
+        <div>
+          <div class="contact-us-rectangle">
+            <p class="contact-us-text">
+              Please use the form below to contact us. Enter your name, email,
+              phone, and message and we'll get back to you shortly.
+            </p>
+            <form class="contact-us-form">
+              <div class="form-item">
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    name="username"
+                    placeholder="Name"
+                    required
+                    pattern="[A-Za-z0-9]{3,20}"
+                  />
+                </label>
+              </div>
+              <div class="form-item">
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="form-item">
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    pattern="[0-9]{10}"
+                    title="Номер телефону повинен містити 10 цифр."
+                    placeholder="+380"
+                  />
+                </label>
+              </div>
+              <div class="form-item">
+                <label class="message-label">
+                  <textarea
+                    class="textarea"
+                    name="feedback"
+                    rows="2"
+                    placeholder="Comment"
+                  ></textarea>
+                </label>
+              </div>
+              <button class="send-button" type="button">Send</button>
+            </form>
+          </div>
+          <div class="overlay-container">
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./contact-us/clock-pc1.png   1x,
+                  ./contact-us/clock-pc@2x.png 2x
+                "
               />
-            </label>
-          </div>
-
-          <div class="form-item">
-            <label class="form-label">
-              <input
-                class="form-input"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./contact-us/clock-tab1.png   1x,
+                  ./contact-us/clock-tab@2x.png 2x
+                "
               />
-            </label>
-          </div>
-          <div class="form-item">
-            <label class="form-label">
-              <input
-                class="form-input"
-                type="tel"
-                id="phone"
-                name="phone"
-                required
-                pattern="[0-9]{10}"
-                title="Номер телефону повинен містити 10 цифр."
-                placeholder="+380"
+              <source
+                media="(min-width:375px)"
+                srcset="
+                  ./contact-us/clock-mob1.png    1x,
+                  ./contact-us/clock-mob2@2x.png 2x
+                "
               />
-            </label>
+              <img
+                src="./contact-us/clock-pc1.png"
+                alt="clock"
+                width="530"
+                height="556"
+              />
+            </picture>
           </div>
-          <div class="form-item">
-            <label>
-              <textarea
-                name="feedback"
-                rows="2"
-                placeholder="Comment"
-              ></textarea>
-            </label>
-          </div>
-          <button type="button" class="view-catalog-button">Send</button>
-        </form>
-
-        <div class="overlay-container container">
-          <picture>
-            <source
-              media="(min-width:1280px)"
-              srcset="
-                ./contact-us/clock-pc1.png   1x,
-                ./contact-us/clock-pc@2x.png 2x
-              "
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="
-                ./contact-us/clock-tab1.png   1x,
-                ./contact-us/clock-tab@2x.png 2x
-              "
-            />
-            <source
-              media="(min-width:375px)"
-              srcset="
-                ./contact-us/clock-mob1.png    1x,
-                ./contact-us/clock-mob2@2x.png 2x
-              "
-            />
-            <img
-              src="./contact-us/clock-pc1.png"
-              alt="clock"
-              width="530"
-              height="556"
-            />
-          </picture>
         </div>
       </div>
     </section>

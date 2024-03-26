@@ -1,5 +1,4 @@
 .container {
-  display: block;
   justify-content: space-between;
   background: #f3f3f3;
   max-width: 320px;
@@ -7,6 +6,8 @@
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
+}
+.container .container-content {
 }
 .contact-us {
   display: flex;
@@ -17,9 +18,6 @@
   padding: 0px, 65px, 0px, 65px;
 }
 
-.contact-us-text {
-  margin-bottom: 20px;
-}
 .contact-us-title {
   font-family: 'Gilroy', sans-serif;
   font-weight: 600;
@@ -28,19 +26,71 @@
   letter-spacing: -0.02em;
   color: #0c0c0c;
 }
-.form:focus-within {
-  border-color: #2196f3;
+.contact-us-text {
+  margin-bottom: 20px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  margin-bottom: 32px;
+}
+.contact-us-rectangle {
+  box-sizing: border-box;
+  border-radius: 50px;
+  width: 580px;
+  min-height: 556px;
+
+  background: #f3f3f3;
+}
+.contact-us-form {
+  border-radius: 50px;
+  width: 580px;
+  min-height: 556px;
+  padding: 50px 60px;
 }
 
-.form-label:focus-within {
-  color: #2196f3;
+.form-input,
+.textarea {
+  margin-top: 5px;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  outline: transparent;
+  background: transparent;
+}
+.form-input {
+  height: 52px;
+}
+.form-input:focus {
+  border-color: #3350e9;
 }
 
-.overlay-container {
+.form-input::placeholder,
+.textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0c0c0c;
+}
+
+.textarea {
+  scrollbar-width: none;
+  resize: none;
+}
+.textarea:focus {
+  border-color: #3350e9;
+}
+.form-item {
+}
+.message-label {
+}
+.overlay-container .container {
   border-radius: 50px;
   width: 580px;
   height: 556px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,27 +107,18 @@
   margin-bottom: 10px;
 }
 
-.form-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-}
-
-.view-catalog-button {
-  padding: 10px 20px;
+.send-button {
+  border-radius: 16px;
+  padding: 17px 63px;
+  min-width: 160px;
+  height: 52px;
   background-color: #3350e9;
   color: #fff;
   border: none;
-  border-radius: 16px;
-  width: 160px;
-  height: 48px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.view-catalog-button:hover {
+.send-button:hover {
   background-color: #1f3cd4;
 }
